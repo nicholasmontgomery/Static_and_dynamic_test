@@ -17,14 +17,6 @@ class CardGameTest < MiniTest::Test
     @cards = [@card1, @card2, @card3, @card4]
   end
 
-  def test_card_suit()
-    assert_equal("Hearts", @card1.suit)
-  end
-
-  def test_card_value()
-    assert_equal(3, @card2.value)
-  end
-
   def test_check_for_ace_is_true
     assert_equal(true, @cardgame.check_for_ace(@card4))
   end
